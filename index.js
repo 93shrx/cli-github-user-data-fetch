@@ -17,7 +17,7 @@ async function getGithubUserInfo() {
         const response = await fetch(`https://api.github.com/users/${githubUser}/events`, {
             headers: {
                 'Accept': 'application/vnd.github.v3+json',
-                'Authorization': 'Bearer YOU TOKEN HERE',
+                'Authorization': 'Bearer YOUR TOKEN HERE',
             }
         });
         if (!response.ok) {
